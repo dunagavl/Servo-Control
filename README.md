@@ -1,5 +1,5 @@
 
-#Servo Control
+# Servo Control
 Simulink generates a control input (servo angle), which is transmitted over serial to the dsPIC. The firmware parses the incoming data and updates the PWM duty cycle accordingly, producing the appropriate servo control pulse.
 
 ---
