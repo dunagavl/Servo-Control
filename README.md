@@ -9,7 +9,7 @@ Simulink generates a control input (servo angle), which is transmitted over seri
 - **Microcontroller:** dsPIC33FJ32GS608  
 - **Architecture:** 16-bit Digital Signal Controller  
 - **PWM Frequency:** 50 Hz (20 ms period)  
-- **Servo Type:** Standard hobby servo  
+- **Servo Type:** Crouzet DC Motor  
 - **Communication Interface:** UART Serial  
 
 The dsPIC33FJ32GS608 was selected for its:
