@@ -1,9 +1,8 @@
 /*******************************************************
 Name: Main.c
 Date: 10/3/2025
-Created By: DT/MG/AH
 Description: Main source code file for dsPIC breakout board test.
-Now implements a discrete-time PD servo using Tustin approximation.
+Implements a discrete-time PD servo using Tustin approximation.
 *******************************************************/
 
 #include "Defs.h"
@@ -46,7 +45,7 @@ extern void initQEI(void);
 #define B1      -32.55f       // e[k-1] coefficient (note minus sign)
 
 // ===== Physical limits and conversion constants =====
-#define V_SUPPLY  24            // Treat ±24 V as full command
+#define V_SUPPLY  24            // Treat Â±24 V as full command
 #define TWO_PI    6.28318530718f
 #define PI        3.14159265359f
 
@@ -79,7 +78,7 @@ static float PD_step(float theta_ref_rad, float theta_meas_rad)
     // u[k] = A1*u[k-1] + B0*e[k] + B1*e[k-1]
     float u = A1 * u_prev + B0 * e + B1 * e_prev;
 
-    // Saturate to ±V_SUPPLY
+    // Saturate to Â±V_SUPPLY
     if (u >  V_SUPPLY) u =  V_SUPPLY;
     if (u < -V_SUPPLY) u = -V_SUPPLY;
 
