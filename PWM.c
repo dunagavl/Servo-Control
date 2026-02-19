@@ -1,11 +1,5 @@
 /*******************************************************
 Name: PWM.c
-Date: 9/27/2013
-Created By: Don Truex
-Revision History:
-MG 10/10/2013 Modified and commented
-MG 10/30/2013 Corrected error in PTPER formula
- 
 Description:
 This file initializes the PWM 1H on the dsPIC,
 sets the PWM frequency, and sets the initial output to 0.
