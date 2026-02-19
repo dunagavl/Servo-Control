@@ -92,7 +92,7 @@ The pulse width is then converted into timer counts and written to the PWM duty 
 ---
 
 ## Software Structure
-/src
+src
 ├── Main.c → System initialization and control logic
 ├── PWM.c → PWM configuration and duty updates
 
